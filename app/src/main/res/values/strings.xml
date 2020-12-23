@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Gotas 2.0</string>
+    <string name="sp_text1">Sampurasun!</string>
+    <string name="sp_text2">Silahkan login terlebih dahulu</string>
+    <string name="sp_text3">Nama Pengguna / Email</string>
+    <string name="sp_text4">Kata Sandi</string>
+    <string name="sp_text5">Dengan masuk, kamu telah menyetujui\nKetentuan Layanan dan Kebijakan Privasi</string>
+    <string name="sp_text6">Belum memiliki akun? Daftar disini</string>
+
+    <string name="sup_text1">REGISTRASI</string>
+    <string name="sup_text2">Tolong isi beberapa data anda dibawah</string>
+    <string name="sup_text3">Nama Lengkap</string>
+    <string name="sup_text4">Email</string>
+    <string name="sup_text5">Nomor Handphone</string>
+    <string name="sup_text6">Username</string>
+    <string name="sup_text7">Kata Sandi</string>
+    <string name="sup_text8">Dengan menjadi pengguna berarti Anda telah setuju dengan\nSyarat dan Ketentuan &amp; Kebijakan Privasi kami</string>
+    <string name="sup_text9">Sudah memiliki akun? Masuk disini</string>
+
+    <string name="ob_text1">Wilujeng Sumping!</string>
+    <string name="ob_text2">GOTAS merupakan aplikasi jasa layanan\nkarya putra daerah Tasikmalaya</string>
+    <string name="ob_text3">Genah. Murah. Ramah. Berkah.</string>
+    <string name="ob_text4">Nikmati berbagai jenis layanan\ndengan harga terjangkau dan\npelayanan terbaik</string>
+    <string name="ob_text5">Hatur Nuhun!</string>
+    <string name="ob_text6">Mangga Akang/Teteh.\nSelamat menggunaan layanan dari\nGotas Tasikmalaya</string>
+</resources>
