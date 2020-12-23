@@ -17,10 +17,18 @@
     <string name="sup_text8">Dengan menjadi pengguna berarti Anda telah setuju dengan\nSyarat dan Ketentuan &amp; Kebijakan Privasi kami</string>
     <string name="sup_text9">Sudah memiliki akun? Masuk disini</string>
 
-    <string name="ob_text1">Wilujeng Sumping!</string>
-    <string name="ob_text2">GOTAS merupakan aplikasi jasa layanan\nkarya putra daerah Tasikmalaya</string>
-    <string name="ob_text3">Genah. Murah. Ramah. Berkah.</string>
-    <string name="ob_text4">Nikmati berbagai jenis layanan\ndengan harga terjangkau dan\npelayanan terbaik</string>
-    <string name="ob_text5">Hatur Nuhun!</string>
-    <string name="ob_text6">Mangga Akang/Teteh.\nSelamat menggunaan layanan dari\nGotas Tasikmalaya</string>
+    <!--String For On Boarding Screen-->
+    <string name="ob1_text1">Wilujeng Sumping!</string>
+    <string name="ob1_text2">GOTAS merupakan aplikasi jasa layanan\nkarya putra daerah Tasikmalaya</string>
+
+    <string name="ob2_text1">Genah. Murah. Ramah. Berkah.</string>
+    <string name="ob2_text2">Nikmati berbagai jenis layanan\ndengan harga terjangkau dan\npelayanan terbaik</string>
+
+    <string name="ob3_text1">Hatur Nuhun!</string>
+    <string name="ob3_text2">Mangga Akang/Teteh.\nSelamat menggunaan layanan dari\nGotas Tasikmalaya</string>
+
+    <!--Button-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="ayo_mulai">Ayo Mulai!</string>
 </resources>
