@@ -23,9 +23,9 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     int images[] = {
-            R.drawable.onboarding1_background,
-            R.drawable.onboarding2_background,
-            R.drawable.onboarding1_background
+            R.drawable.boarding_1,
+            R.drawable.boarding_2,
+            R.drawable.boarding_3
     };
 
     int headings[] = {

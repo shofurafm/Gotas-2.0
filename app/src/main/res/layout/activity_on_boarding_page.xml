@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnBoardingPage"
-    android:padding="20dp">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".OnBoardingPage">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slider"
@@ -18,6 +20,18 @@
 
     </androidx.viewpager.widget.ViewPager>
 
+    <!--<Button
+        android:id="@+id/skipBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:onClick="skip"
+        android:text="@string/skip_btn"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/> -->
+
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
@@ -27,11 +41,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/getstarted"
+            android:id="@+id/getStartedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkOrange"
             android:text="@string/ayo_mulai"
-            android:backgroundTint="@color/darkOrange"/>
+            android:visibility="invisible" />
 
         <LinearLayout
             android:id="@+id/dots"
@@ -52,7 +67,8 @@
             android:layout_marginBottom="4dp"
             android:backgroundTint="@color/transparent"
             android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24" />
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:onClick="next" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

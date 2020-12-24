@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/gotas_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OnBoardingPage"></activity>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".OnBoardingPage" />
         <activity android:name=".SignUpPage" />
         <activity android:name=".LoginPage" />
         <activity android:name=".MainActivity">
