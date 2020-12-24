@@ -10,7 +10,7 @@ import android.widget.Button;
 public class LoginPage extends AppCompatActivity {
 
     //Variables
-    Button callSignUp, signedIn;
+    Button callSignUp, signedIn, forgetPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,17 @@ public class LoginPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginPage.this, Dashboard.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        forgetPassword = findViewById(R.id.btnForgetPass);
+
+        forgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginPage.this, ForgetPassPage.class);
                 startActivity(intent);
                 finish();
             }

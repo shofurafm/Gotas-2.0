@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Pair;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 3000;
     //variables
-    Animation topAnimation, bottomAnimation;
+    Animation topAnimation, bottomAnimation, fadeInAnimation;
     ImageView image;
     TextView text;
 
@@ -32,13 +31,14 @@ public class MainActivity extends AppCompatActivity {
         //Animation
         topAnimation = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+        fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
 
         //Hooks
         image = findViewById(R.id.imageView);
         text = findViewById(R.id.textView);
 
         //Action
-        image.setAnimation(topAnimation);
+        image.setAnimation(fadeInAnimation);
         text.setAnimation(bottomAnimation);
 
         new Handler().postDelayed(new Runnable() {

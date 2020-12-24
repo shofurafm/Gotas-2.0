@@ -5,7 +5,7 @@
     <string name="sp_text3">Nama Pengguna / Email</string>
     <string name="sp_text4">Kata Sandi</string>
     <string name="sp_text5">Dengan masuk, kamu telah menyetujui\nKetentuan Layanan dan Kebijakan Privasi</string>
-    <string name="sp_text6">Belum memiliki akun? Daftar disini</string>
+    <string name="sp_text6">Daftar</string>
 
     <string name="sup_text1">REGISTRASI</string>
     <string name="sup_text2">Tolong isi beberapa data anda dibawah</string>
@@ -31,4 +31,6 @@
     <string name="skip_btn">Skip</string>
     <string name="next_btn">Next</string>
     <string name="ayo_mulai">Ayo Mulai!</string>
+    <string name="forgetPass">Lupa Password?</string>
+    <string name="logIn">Masuk</string>
 </resources>
