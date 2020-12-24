@@ -48,6 +48,7 @@ public class OnBoardingPage extends AppCompatActivity {
     /*
     public void skip(View view){
         startActivity(new Intent(this, Dashboard.class));
+        finish();
     }*/
 
     public void next(View view){
@@ -94,8 +95,15 @@ public class OnBoardingPage extends AppCompatActivity {
                 animation = AnimationUtils.loadAnimation(OnBoardingPage.this, R.anim.bottom_animation2);
                 getStartedButton.setAnimation(animation);
                 getStartedButton.setVisibility(View.VISIBLE);
-            }
 
+                getStartedButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(OnBoardingPage.this, Dashboard.class);
+                        startActivity(intent);
+                    }
+                });
+            }
         }
 
         @Override

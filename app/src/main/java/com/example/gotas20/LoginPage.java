@@ -33,7 +33,7 @@ public class LoginPage extends AppCompatActivity {
         signedIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginPage.this, OnBoardingPage.class);
+                Intent intent = new Intent(LoginPage.this, Dashboard.class);
                 startActivity(intent);
                 finish();
             }
