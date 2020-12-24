@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class LoginPage extends AppCompatActivity {
 
     //Variables
-    Button callSignUp, signedIn, forgetPassword;
+    Button callSignUp, signedIn ;
+    TextView forgetPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

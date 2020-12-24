@@ -51,9 +51,9 @@ public class OnBoardingPage extends AppCompatActivity {
         finish();
     }*/
 
-    public void next(View view){
+    /*public void next(View view){
         viewPager.setCurrentItem(currentPosition + 1);
-    }
+    }*/
 
     private void addDots(int position){
 
