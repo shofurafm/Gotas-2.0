@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/gotas_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForgetPassPage"></activity>
+        <activity android:name=".ForgetPassword.ResetPasswordPage"></activity>
+        <activity android:name=".ForgetPassword.VerificationPage" />
+        <activity android:name=".ForgetPassword.MakeSelectionPage" />
+        <activity android:name=".ForgetPassword.ForgetPassPage" />
         <activity android:name=".Dashboard" />
         <activity android:name=".OnBoardingPage" />
         <activity android:name=".SignUpPage" />

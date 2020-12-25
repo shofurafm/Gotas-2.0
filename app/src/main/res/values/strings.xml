@@ -27,10 +27,25 @@
     <string name="ob_heading_3">Hatur Nuhun!</string>
     <string name="ob_desc_3">Mangga Akang/Teteh.\nSelamat menggunaan layanan dari\nGotas Tasikmalaya</string>
 
+    <!--ForgetPass-->
+    <string name="forgetPass">Lupa Password?</string>
+    <string name="forgetPass2">Lupa Password</string>
+    <string name="email">Email</string>
+    <string name="makeSelection">Buat\npilihan</string>
+    <string name="makeSelectionDetail">Pilih detail kontak yang mana\nuntuk memperbarui password?</string>
+    <string name="mobileTitle">Via SMS:</string>
+    <string name="mobileDesc">+62 1234 567 89</string>
+    <string name="mailTitle">Via Mail:</string>
+    <string name="mailDesc">support@gotas.com</string>
+    <string name="resetTitle">Reset Password</string>
+    <string name="newPass">Kata Sandi Baru</string>
+    <string name="newPass2">Ulang Kata Sandi Baru</string>
+    <string name="resetPass">Atur Ulang</string>
+
     <!--Button-->
     <string name="skip_btn">Skip</string>
     <string name="next_btn">Next</string>
     <string name="ayo_mulai">Ayo Mulai!</string>
-    <string name="forgetPass">Lupa Password?</string>
+    <string name="forgetPassDetail">Harap masukkan akun email anda\nyang akan di perbarui kata sandinya</string>
     <string name="logIn">Masuk</string>
 </resources>

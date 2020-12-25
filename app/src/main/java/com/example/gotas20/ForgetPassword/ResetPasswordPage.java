@@ -1,14 +1,16 @@
-package com.example.gotas20;
+package com.example.gotas20.ForgetPassword;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ForgetPassPage extends AppCompatActivity {
+import com.example.gotas20.R;
+
+public class ResetPasswordPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_pass_page);
+        setContentView(R.layout.activity_reset_password_page);
     }
 }
