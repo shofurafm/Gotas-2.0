@@ -46,7 +46,7 @@
 
             <ImageView
                 android:id="@+id/mobileIcon"
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="150dp"
                 android:src="@drawable/phone2_icon"
                 android:layout_centerVertical="true"
@@ -91,7 +91,7 @@
 
             <ImageView
                 android:id="@+id/emailIcon"
-                android:layout_width="150dp"
+                android:layout_width="100dp"
                 android:layout_height="150dp"
                 android:src="@drawable/mail_icon"
                 android:layout_centerVertical="true"
