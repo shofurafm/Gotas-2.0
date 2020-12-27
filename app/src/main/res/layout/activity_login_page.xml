@@ -28,7 +28,7 @@
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="0dp"
         android:src="@drawable/white_logo_nobg"
         android:transitionName="logo_image"
         app:layout_constraintBottom_toBottomOf="parent" />
@@ -43,7 +43,7 @@
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/galvji_bold"/>
 
     <TextView
