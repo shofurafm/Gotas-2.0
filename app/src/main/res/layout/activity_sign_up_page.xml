@@ -26,11 +26,10 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_gravity="left"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/black_logo_nobg"
+        android:src="@drawable/registration_icon"
         android:transitionName="logo_image"
         app:layout_constraintBottom_toBottomOf="parent" />
 
@@ -38,7 +37,6 @@
         android:id="@+id/greetingSignUp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/sup_text1"
         android:transitionName="logo_text"
         android:textSize="30sp"
