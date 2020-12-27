@@ -11,9 +11,11 @@
                 android:angle="270"/>
         </shape>
     </item>
-    <item android:top="150dp">
+    <item android:top="90dp">
         <shape android:shape="rectangle">
             <corners
+                android:topLeftRadius="25dip"
+                android:topRightRadius="25dip"
                 android:bottomLeftRadius="8dip"
                 android:bottomRightRadius="8dip"/>
             <gradient
