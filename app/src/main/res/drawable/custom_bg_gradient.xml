@@ -6,12 +6,12 @@
                 android:topRightRadius="0dip"
                 android:topLeftRadius="0dip"/>
             <gradient
-                android:startColor="@color/darkOrange"
-                android:endColor="@color/darkOrange"
+                android:startColor="@color/newOrange"
+                android:endColor="@color/newOrange"
                 android:angle="270"/>
         </shape>
     </item>
-    <item android:top="250dp">
+    <item android:top="150dp">
         <shape android:shape="rectangle">
             <corners
                 android:bottomLeftRadius="8dip"
