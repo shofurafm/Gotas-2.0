@@ -4,69 +4,204 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard"
+    android:background="@drawable/custom_bg_gradient"
     android:orientation="vertical"
-    tools:openDrawer="start"
-    android:background="@drawable/custom_bg_gradient">
+    tools:context=".Dashboard"
+    tools:openDrawer="start">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:layout_marginTop="-30dp">
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/menu2_icon"
-            android:layout_centerVertical="true"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_icon" />
 
         <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:src="@drawable/notif_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:src="@drawable/notif_icon" />
 
         <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:src="@drawable/white_logo_nobg"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
             android:layout_centerInParent="true"
-            android:layout_marginTop="-100dp"/>
+            android:src="@drawable/white_logo_nobg" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="-20dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="10dp">
 
         <Button
             android:id="@+id/searchBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
             android:text="@string/search_tab"
-            android:textColor="@color/Grey"
             android:textAllCaps="false"
-            android:drawableLeft="@drawable/ic_baseline_search_24" />
+            android:textColor="@color/Grey"
+            android:textAlignment="gravity"
+            android:gravity="left|center"
+            android:outlineAmbientShadowColor="@color/white"
+            android:elevation="10dp"/>
 
     </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@color/Grey"/>
+
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="10dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@color/Grey"/>
+        <Button
+            android:id="@+id/payment_1"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/lightGrey"
+            android:gravity="center"
+            android:text="payment 1" />
 
+        <Button
+            android:id="@+id/payment_2"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/lightGrey"
+            android:gravity="center"
+            android:text="payment 2" />
+
+        <Button
+            android:id="@+id/payment_3"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/lightGrey"
+            android:gravity="center"
+            android:text="payment 3" />
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/headerNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galvji_bold"
+                android:text="Harian Gotas"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/descNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerNews"
+                android:fontFamily="@font/galvji"
+                android:text="Sekilas info buat kamu!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerSliderNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/descNews"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsFeature"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/headerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/galvji_bold"
+                android:text="Info Gotas"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/descInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerInfo"
+                android:fontFamily="@font/galvji"
+                android:text="Biar gak bingung pakenya, nih tips buat kamu!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerSliderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/descInfo"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <!--<androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"/>-->
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -11,7 +11,7 @@
                 android:angle="270"/>
         </shape>
     </item>
-    <item android:top="90dp">
+    <item android:top="60dp">
         <shape android:shape="rectangle">
             <corners
                 android:topLeftRadius="25dip"
