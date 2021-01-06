@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:background="@color/lightGrey"
+    android:layout_gravity="center"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/tasRideBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <ImageButton
+            android:id="@+id/tasCarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <ImageButton
+            android:id="@+id/tasFoodBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <TextView
+            android:id="@+id/rideTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-RIDE"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@id/tasRideBtn"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/carTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-CAR"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tasCarBtn"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/foodTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-FOOD"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@id/tasRideBtn"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/tasShopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <ImageButton
+            android:id="@+id/tasSendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <ImageButton
+            android:id="@+id/tasSchoolBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_btn" />
+
+        <TextView
+            android:id="@+id/shopTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-SHOP"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@id/tasShopBtn"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/sendTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-SEND"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tasSendBtn"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/schoolTxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAS-SCHOOL"
+            android:fontFamily="@font/galvji_bold"
+            android:textColor="@color/darkGrey"
+            android:layout_below="@id/tasSchoolBtn"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</LinearLayout>
