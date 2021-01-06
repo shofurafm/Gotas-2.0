@@ -54,7 +54,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="30dp"
-        android:fontFamily="@font/galvji"/>
+        android:fontFamily="@font/galvji"
+        android:textColor="@color/darkGrey"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -150,7 +151,8 @@
             android:layout_gravity="center"
             android:text="Daftar"
             android:backgroundTint="@color/newOrange"
-            android:fontFamily="@font/galvji_bold"/>
+            android:fontFamily="@font/galvji_bold"
+            android:onClick="registerUser"/>
 
     </LinearLayout>
 </LinearLayout>
