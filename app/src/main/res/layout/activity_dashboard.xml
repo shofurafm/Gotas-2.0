@@ -35,169 +35,271 @@
             android:src="@drawable/white_logo_nobg" />
     </RelativeLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="80dp"
-        android:paddingTop="10dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:elevation="10dp"
+                android:gravity="left|center"
+                android:outlineAmbientShadowColor="@color/white"
+                android:text="@string/search_tab"
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="@color/Grey"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dashboard_banner" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:background="@drawable/payment_bg">
+
+                <ImageView
+                    android:id="@+id/iconPayment1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone2_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-10dp"/>
+
+                <TextView
+                    android:id="@+id/saldo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 200.000"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:layout_toRightOf="@+id/iconPayment1"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/txtSaldo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo Ovo"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/iconPayment1"
+                    android:layout_below="@+id/saldo1"/>
+
+                <Button
+                    android:id="@+id/payment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:background="@drawable/payment_bg"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/iconPayment2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone2_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-10dp"/>
+
+                <TextView
+                    android:id="@+id/saldo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 200.000"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:layout_toRightOf="@+id/iconPayment2"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/txtSaldo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo Gopay"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/iconPayment2"
+                    android:layout_below="@+id/saldo2"/>
+
+                <Button
+                    android:id="@+id/payment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:background="@drawable/payment_bg"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/iconPayment3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone2_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="-10dp"/>
+
+                <TextView
+                    android:id="@+id/saldo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 200.000"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:layout_toRightOf="@+id/iconPayment3"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/txtSaldo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo LinkAja"
+                    android:textSize="9sp"
+                    android:fontFamily="@font/galvji_bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/iconPayment3"
+                    android:layout_below="@+id/saldo3"/>
+
+                <Button
+                    android:id="@+id/payment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="185dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="10dp">
+                android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/searchBtn"
+                <TextView
+                    android:id="@+id/headerNews"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/transparent"
-                    android:drawableLeft="@drawable/ic_baseline_search_24"
-                    android:elevation="10dp"
-                    android:gravity="left|center"
-                    android:outlineAmbientShadowColor="@color/white"
-                    android:text="@string/search_tab"
-                    android:textAlignment="gravity"
-                    android:textAllCaps="false"
-                    android:textColor="@color/Grey"/>
+                    android:fontFamily="@font/galvji_bold"
+                    android:text="Harian Gotas"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
 
+                <TextView
+                    android:id="@+id/descNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerNews"
+                    android:fontFamily="@font/galvji"
+                    android:text="Sekilas info buat kamu!"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerSliderNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descNews"
+                    android:layout_marginTop="10dp" />
             </RelativeLayout>
+        </LinearLayout>
 
-            <ImageView
-                android:id="@+id/banner"
-                android:layout_width="370dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/banner_dashboard" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="30dp">
+                android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/payment_1"
-                    android:layout_width="110dp"
-                    android:layout_height="70dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerHorizontal="true"
-                    android:backgroundTint="@color/lightGrey"
-                    android:gravity="center"
-                    android:text="payment 1" />
+                <TextView
+                    android:id="@+id/headerInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galvji_bold"
+                    android:text="Info Gotas"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
 
-                <Button
-                    android:id="@+id/payment_2"
-                    android:layout_width="110dp"
-                    android:layout_height="70dp"
-                    android:layout_centerHorizontal="true"
-                    android:backgroundTint="@color/lightGrey"
-                    android:gravity="center"
-                    android:text="payment 2" />
+                <TextView
+                    android:id="@+id/descInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerInfo"
+                    android:fontFamily="@font/galvji"
+                    android:text="Biar gak bingung pakenya, nih tips buat kamu!"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp" />
 
-                <Button
-                    android:id="@+id/payment_3"
-                    android:layout_width="110dp"
-                    android:layout_height="70dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerHorizontal="true"
-                    android:backgroundTint="@color/lightGrey"
-                    android:gravity="center"
-                    android:text="payment 3" />
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerSliderInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descInfo"
+                    android:layout_marginTop="10dp" />
             </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="185dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="30dp"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/headerNews"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/galvji_bold"
-                        android:text="Harian Gotas"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="22sp" />
-
-                    <TextView
-                        android:id="@+id/descNews"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/headerNews"
-                        android:fontFamily="@font/galvji"
-                        android:text="Sekilas info buat kamu!"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13sp" />
-
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:id="@+id/viewPagerSliderNews"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_below="@+id/descNews"
-                        android:layout_marginTop="10dp" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="185dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/headerInfo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/galvji_bold"
-                        android:text="Info Gotas"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="22sp" />
-
-                    <TextView
-                        android:id="@+id/descInfo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/headerInfo"
-                        android:fontFamily="@font/galvji"
-                        android:text="Biar gak bingung pakenya, nih tips buat kamu!"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="13sp" />
-
-                    <androidx.viewpager2.widget.ViewPager2
-                        android:id="@+id/viewPagerSliderInfo"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_below="@+id/descInfo"
-                        android:layout_marginTop="10dp" />
-                </RelativeLayout>
-
-            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomNavBar"
@@ -218,7 +320,7 @@
         android:src="@drawable/black_logo_nobg"
         android:backgroundTint="@color/white"
         app:layout_anchor="@id/bottomNavBar"
-        app:maxImageSize="50dp"
+        app:maxImageSize="70dp"
         app:fabCustomSize="80dp"
         android:tint="@color/white"/>
 

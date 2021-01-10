@@ -45,9 +45,9 @@ public class Dashboard extends AppCompatActivity {
 
         // list image from drawable
         List<SliderforNews> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderforNews(R.drawable.banner_dashboard));
-        sliderItems.add(new SliderforNews(R.drawable.banner_dashboard));
-        sliderItems.add(new SliderforNews(R.drawable.banner_dashboard));
+        sliderItems.add(new SliderforNews(R.drawable.dashboard_item));
+        sliderItems.add(new SliderforNews(R.drawable.dashboard_item));
+        sliderItems.add(new SliderforNews(R.drawable.dashboard_item));
 
         viewPager2.setAdapter(new SliderAdapterNews(sliderItems, viewPager2));
 
@@ -70,9 +70,9 @@ public class Dashboard extends AppCompatActivity {
 
         // list image from drawable
         List<SliderforInfo> sliderItemsInfo = new ArrayList<>();
-        sliderItemsInfo.add(new SliderforInfo(R.drawable.banner_dashboard));
-        sliderItemsInfo.add(new SliderforInfo(R.drawable.banner_dashboard));
-        sliderItemsInfo.add(new SliderforInfo(R.drawable.banner_dashboard));
+        sliderItemsInfo.add(new SliderforInfo(R.drawable.dashboard_item));
+        sliderItemsInfo.add(new SliderforInfo(R.drawable.dashboard_item));
+        sliderItemsInfo.add(new SliderforInfo(R.drawable.dashboard_item));
 
         viewPager1.setAdapter(new SliderAdapterInfo(sliderItemsInfo, viewPager1));
 
