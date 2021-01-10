@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasFoodPage"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tasFoodBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Mau makan apa hari ini?"
+            android:layout_toRightOf="@+id/tasFoodBackBtn"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/galvji_bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:elevation="10dp"
+            android:gravity="left|center"
+            android:outlineAmbientShadowColor="@color/white"
+            android:text="Cari restoran favorit kamu"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="@color/Grey"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headerRestoFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Restaurant Populer"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/seeAllRestoFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="-58dp"
+            android:layout_toRightOf="@+id/headerRestoFav"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Lihat Semua"
+            android:textColor="@color/newOrange"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerRestoFav"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headerNearResto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Restaurant Terdekat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/seeAllNearResto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="-43dp"
+            android:layout_toRightOf="@+id/headerNearResto"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Lihat Semua"
+            android:textColor="@color/newOrange"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerNearResto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headerRestoCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Cari lewat kategori"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/seeAllRestoCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="-58dp"
+            android:layout_toRightOf="@+id/headerRestoCategories"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Lihat Semua"
+            android:textColor="@color/newOrange"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerRestoCategories"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
