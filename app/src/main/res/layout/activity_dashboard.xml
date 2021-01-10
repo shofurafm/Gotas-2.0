@@ -320,7 +320,7 @@
         android:src="@drawable/black_logo_nobg"
         android:backgroundTint="@color/white"
         app:layout_anchor="@id/bottomNavBar"
-        app:maxImageSize="70dp"
+        app:maxImageSize="50dp"
         app:fabCustomSize="80dp"
         android:tint="@color/white"/>
 
