@@ -61,7 +61,7 @@
 
         <TextView
             android:id="@+id/headerRestoFav"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/galvji_bold"
             android:text="Restaurant Populer"
@@ -70,13 +70,10 @@
 
         <TextView
             android:id="@+id/seeAllRestoFav"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="58dp"
-            android:layout_marginRight="-58dp"
-            android:layout_toRightOf="@+id/headerRestoFav"
+            android:gravity="right"
             android:fontFamily="@font/galvji_bold"
             android:text="Lihat Semua"
             android:textColor="@color/newOrange"
@@ -105,12 +102,10 @@
 
         <TextView
             android:id="@+id/seeAllNearResto"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="43dp"
-            android:layout_marginRight="-43dp"
+            android:gravity="right"
             android:layout_toRightOf="@+id/headerNearResto"
             android:fontFamily="@font/galvji_bold"
             android:text="Lihat Semua"
@@ -140,12 +135,10 @@
 
         <TextView
             android:id="@+id/seeAllRestoCategories"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="58dp"
-            android:layout_marginRight="-58dp"
+            android:gravity="right"
             android:layout_toRightOf="@+id/headerRestoCategories"
             android:fontFamily="@font/galvji_bold"
             android:text="Lihat Semua"
@@ -157,7 +150,9 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerRestoCategories"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"/>
 
 </LinearLayout>
