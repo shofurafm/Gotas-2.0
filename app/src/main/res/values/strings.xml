@@ -51,4 +51,7 @@
 
     <!--Dashboard-->
     <string name="search_tab">Temukan Layanan</string>
+
+    <!--TasFood-->
+    <string name="title_tasfood">Mau makan apa hari ini?</string>
 </resources>

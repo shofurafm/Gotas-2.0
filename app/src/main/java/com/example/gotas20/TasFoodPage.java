@@ -13,6 +13,7 @@ import android.view.View;
 
 import com.example.gotas20.HelperClasses.SliderAdapterFood3;
 import com.example.gotas20.HelperClasses.SliderAdapterNews;
+import com.example.gotas20.HelperClasses.SliderFood2;
 import com.example.gotas20.HelperClasses.SliderFood3;
 import com.example.gotas20.HelperClasses.SliderforNews;
 
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class TasFoodPage extends AppCompatActivity {
 
-    private ViewPager2 viewPager3;
+    private ViewPager2 viewPager3, viewPager2;
     private Handler sliderHandler = new Handler();
 
     @Override
@@ -29,12 +30,14 @@ public class TasFoodPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tas_food_page);
 
-        viewPager3 = findViewById(R.id.viewPagerRestoCategories);
+        //near resto
+        viewPager3 = findViewById(R.id.viewPagerNearResto);
 
         List<SliderFood3> sliderFood3 = new ArrayList<>();
-        sliderFood3.add(new SliderFood3(R.drawable.boarding_1));
-        sliderFood3.add(new SliderFood3(R.drawable.boarding_2));
-        sliderFood3.add(new SliderFood3(R.drawable.boarding_3));
+        sliderFood3.add(new SliderFood3(R.drawable.ts_near1));
+        sliderFood3.add(new SliderFood3(R.drawable.ts_near2));
+        sliderFood3.add(new SliderFood3(R.drawable.ts_near3));
+        sliderFood3.add(new SliderFood3(R.drawable.ts_near4));
 
         viewPager3.setAdapter(new SliderAdapterFood3(sliderFood3, viewPager3));
 
@@ -63,12 +66,50 @@ public class TasFoodPage extends AppCompatActivity {
                 sliderHandler.postDelayed(sliderRunnable, 3000);
             }
         });
+
+        //popular resto
+        viewPager2 = findViewById(R.id.viewPagerPopularResto);
+
+        List<SliderFood2> sliderFood2 = new ArrayList<>();
+        sliderFood2.add(new SliderFood2(R.drawable.ts_near1));
+        sliderFood2.add(new SliderFood2(R.drawable.ts_near2));
+        sliderFood2.add(new SliderFood2(R.drawable.ts_near3));
+        sliderFood2.add(new SliderFood2(R.drawable.ts_near4));
+
+        viewPager2.setAdapter(new SliderAdapterFood3(sliderFood3, viewPager2));
+
+        viewPager2.setClipToPadding(false);
+        viewPager2.setClipChildren(false);
+        viewPager2.setOffscreenPageLimit(3);
+        viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
+
+        CompositePageTransformer compositePageTransformer2 = new CompositePageTransformer();
+        compositePageTransformer2.addTransformer(new MarginPageTransformer(40));
+        compositePageTransformer2.addTransformer(new ViewPager2.PageTransformer() {
+            @Override
+            public void transformPage(@NonNull View page, float position) {
+                float r = 1 - Math.abs(position);
+                page.setScaleY(0.85f + r * 0.15f);
+            }
+        });
+
+        viewPager2.setPageTransformer(compositePageTransformer2);
+
+        viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                sliderHandler.removeCallbacks(sliderRunnable);
+                sliderHandler.postDelayed(sliderRunnable, 3000);
+            }
+        });
     }
 
     private Runnable sliderRunnable = new Runnable() {
         @Override
         public void run() {
             viewPager3.setCurrentItem(viewPager3.getCurrentItem() + 1);
+            viewPager2.setCurrentItem(viewPager2.getCurrentItem() + 1);
         }
     };
 
