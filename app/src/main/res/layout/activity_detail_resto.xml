@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TasFood.DetailResto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/Orange">
+
+        <ImageView
+            android:id="@+id/tasFood2BackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/round_btn"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_orange"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/rating_bg"/>
+
+            <ImageView
+                android:id="@+id/iconRating"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/ic_baseline_rate_review_24"/>
+
+            <TextView
+                android:id="@+id/ratingTxt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="18sp"
+                android:fontFamily="@font/galvji_bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_toRightOf="@+id/iconRating"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/reviewCountTxt"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="(220)"
+                android:textSize="12sp"
+                android:fontFamily="@font/galvji_bold"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/iconRating"
+                android:layout_below="@+id/ratingTxt"
+                android:gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tasFood2ShopBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_btn" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_shopping_basket_orange" />
+
+        <ImageView
+            android:id="@+id/tasFood2FavBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_btn" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_favorite_border_orange" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/restoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:text="Mie Bakso, Sindang Heula"
+            android:fontFamily="@font/galvji_bold"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/restoAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/restoTitle"
+            android:text="Jl. Indihiang No. 97"
+            android:fontFamily="@font/galvji"
+            android:textSize="13sp"
+            android:textColor="@color/darkGrey"/>
+
+        <TextView
+            android:id="@+id/restoDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/restoAddress"
+            android:text="(Put your description here)"
+            android:fontFamily="@font/galvji"
+            android:textSize="13sp"
+            android:textColor="@color/darkGrey"/>
+
+    </RelativeLayout>
+</LinearLayout>
