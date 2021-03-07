@@ -35,7 +35,7 @@ public class Dashboard extends AppCompatActivity {
     FloatingActionButton btnMenu;
     TextView txtRide, txtCar, txtFood, txtShop, txtSend, txtSchool;
     ImageButton btnRide, btnCar, btnFood, btnShop, btnSend, btnSchool;
-    ImageView btnClose;
+    ImageView btnClose, btnNotification;
     Animation animation;
 
     @Override
@@ -43,6 +43,16 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        btnNotification = findViewById(R.id.notifBtn);
+
+        btnNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, Notification.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         viewPager2 = findViewById(R.id.viewPagerSliderNews);
 
