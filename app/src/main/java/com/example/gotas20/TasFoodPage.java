@@ -7,21 +7,27 @@ import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.gotas20.HelperClasses.SliderAdapterFood3;
 import com.example.gotas20.HelperClasses.SliderAdapterNews;
 import com.example.gotas20.HelperClasses.SliderFood2;
 import com.example.gotas20.HelperClasses.SliderFood3;
 import com.example.gotas20.HelperClasses.SliderforNews;
+import com.example.gotas20.TasFood.MurahResto;
+import com.example.gotas20.TasFood.PopulerResto;
+import com.example.gotas20.TasFood.TwentyfourResto;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TasFoodPage extends AppCompatActivity {
 
+    Button cat1, cat2, cat3;
     private ViewPager2 viewPager3, viewPager2;
     private Handler sliderHandler = new Handler();
 
@@ -29,6 +35,39 @@ public class TasFoodPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tas_food_page);
+
+        cat1 = findViewById(R.id.tsCategory1_Btn);
+
+        cat1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, TwentyfourResto.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        cat2 = findViewById(R.id.tsCategory2_Btn);
+
+        cat2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, PopulerResto.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        cat3 = findViewById(R.id.tsCategory3_Btn);
+
+        cat3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, MurahResto.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         //near resto
         viewPager3 = findViewById(R.id.viewPagerNearResto);

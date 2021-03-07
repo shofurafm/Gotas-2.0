@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bg_header"
+    android:orientation="vertical"
+    tools:context=".TasFood.PopulerResto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="20dp"
+        android:layout_marginTop="-10dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back_white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/backBtn"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/galvji_bold"
+            android:text="Populer"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/backBtn"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/galvji"
+            android:text="Pasti enak, makanya banyak yang suka!"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
