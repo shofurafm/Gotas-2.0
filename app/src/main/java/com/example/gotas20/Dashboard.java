@@ -35,7 +35,7 @@ public class Dashboard extends AppCompatActivity {
     FloatingActionButton btnMenu;
     TextView txtRide, txtCar, txtFood, txtShop, txtSend, txtSchool;
     ImageButton btnRide, btnCar, btnFood, btnShop, btnSend, btnSchool;
-    ImageView btnClose, btnNotification;
+    ImageView btnClose, btnNotification, btnProfile;
     Animation animation;
 
     @Override
@@ -49,6 +49,17 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Notification.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnProfile = findViewById(R.id.profileBtn);
+
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, Profile.class);
                 startActivity(intent);
                 finish();
             }

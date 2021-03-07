@@ -16,6 +16,7 @@
         android:layout_marginTop="-30dp">
 
         <ImageView
+            android:id="@+id/profileBtn"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
