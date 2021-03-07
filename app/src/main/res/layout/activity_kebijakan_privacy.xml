@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/custom_bg_header"
     android:orientation="vertical"
-    tools:context=".ProfilePage.PesananSaya">
+    tools:context=".ProfilePage.KebijakanPrivacy">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_toRightOf="@+id/backBtn"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/galvji_bold"
-            android:text="  Pesanan Saya"
+            android:text="  Kebijakan Privasi"
             android:textSize="25sp"
             android:textColor="@color/white"/>
     </RelativeLayout>

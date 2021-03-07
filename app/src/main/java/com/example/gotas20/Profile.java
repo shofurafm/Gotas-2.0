@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.gotas20.ProfilePage.Bantuan;
+import com.example.gotas20.ProfilePage.KebijakanPrivacy;
+import com.example.gotas20.ProfilePage.KetentuanLayanan;
 import com.example.gotas20.ProfilePage.PesananSaya;
 
 public class Profile extends AppCompatActivity {
@@ -33,7 +35,7 @@ public class Profile extends AppCompatActivity {
 
         opt1 = findViewById(R.id.option1);
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
+        opt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this, PesananSaya.class);
@@ -44,10 +46,32 @@ public class Profile extends AppCompatActivity {
 
         opt2 = findViewById(R.id.option2);
 
-        btnBack.setOnClickListener(new View.OnClickListener() {
+        opt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this, Bantuan.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        opt3 = findViewById(R.id.option3);
+
+        opt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, KebijakanPrivacy.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        opt4 = findViewById(R.id.option4);
+
+        opt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, KetentuanLayanan.class);
                 startActivity(intent);
                 finish();
             }

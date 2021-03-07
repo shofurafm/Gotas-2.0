@@ -107,7 +107,7 @@
             android:layout_gravity="center"
             android:layout_centerHorizontal="true"
             android:text="Pesanan Saya"
-            android:backgroundTint="@color/darkOrange"
+            android:backgroundTint="@color/newOrange"
             android:fontFamily="@font/galvji_bold"
             android:textColor="@color/white"/>
 
@@ -119,7 +119,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/option1"
             android:text="Bantuan"
-            android:backgroundTint="@color/darkOrange"
+            android:backgroundTint="@color/newOrange"
             android:fontFamily="@font/galvji_bold"
             android:textColor="@color/white"/>
 
@@ -131,7 +131,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/option2"
             android:text="Kebijakan Privasi"
-            android:backgroundTint="@color/darkOrange"
+            android:backgroundTint="@color/newOrange"
             android:fontFamily="@font/galvji_bold"
             android:textColor="@color/white"/>
 
@@ -143,7 +143,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/option3"
             android:text="Ketentuan Layanan"
-            android:backgroundTint="@color/darkOrange"
+            android:backgroundTint="@color/newOrange"
             android:fontFamily="@font/galvji_bold"
             android:textColor="@color/white"/>
     </RelativeLayout>
