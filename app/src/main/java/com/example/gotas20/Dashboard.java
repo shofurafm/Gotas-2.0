@@ -112,10 +112,16 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, TasFoodPage.class);
                 startActivity(intent);
-                finish();
             }
         });
         btnShop = (ImageButton) myDialog.findViewById(R.id.tasShopBtn);
+        btnShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, TasShopPage.class);
+                startActivity(intent);
+            }
+        });
         btnSend = (ImageButton) myDialog.findViewById(R.id.tasSendBtn);
         btnSchool = (ImageButton) myDialog.findViewById(R.id.tasSchoolBtn);
 
