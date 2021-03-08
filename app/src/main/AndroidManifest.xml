@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TasShop.ShopWaitingPage"></activity>
+        <activity android:name=".TasSend.SendPickAddress"></activity>
+        <activity android:name=".TasSendPage" />
+        <activity android:name=".TasShop.ShopWaitingPage" />
         <activity android:name=".TasShop.ShopRequest" />
         <activity android:name=".TasShop.ShopPickAddress" />
         <activity android:name=".TasShopPage" />
