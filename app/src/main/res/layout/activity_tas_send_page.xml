@@ -45,7 +45,7 @@
             android:paddingRight="30dp"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
-            android:text="Mau Beli Apa?"
+            android:text="Mau kirim Apa?"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:fontFamily="@font/galvji_bold"/>
@@ -58,7 +58,7 @@
             android:layout_marginTop="0dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/title"
-            android:text="Silahkan masukkan deskripsi belanjaan anda"
+            android:text="Silahkan masukkan deskripsi paket anda"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:fontFamily="@font/galvji"/>

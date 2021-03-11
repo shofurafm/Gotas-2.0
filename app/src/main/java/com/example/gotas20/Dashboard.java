@@ -106,6 +106,7 @@ public class Dashboard extends AppCompatActivity {
 
         btnRide = (ImageButton) myDialog.findViewById(R.id.tasRideBtn);
         btnCar = (ImageButton) myDialog.findViewById(R.id.tasCarBtn);
+
         btnFood = (ImageButton) myDialog.findViewById(R.id.tasFoodBtn);
         btnFood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +115,7 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btnShop = (ImageButton) myDialog.findViewById(R.id.tasShopBtn);
         btnShop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +124,16 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btnSend = (ImageButton) myDialog.findViewById(R.id.tasSendBtn);
+        btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, TasSendPage.class);
+                startActivity(intent);
+            }
+        });
+
         btnSchool = (ImageButton) myDialog.findViewById(R.id.tasSchoolBtn);
 
         txtRide = (TextView) myDialog.findViewById(R.id.rideTxt);
