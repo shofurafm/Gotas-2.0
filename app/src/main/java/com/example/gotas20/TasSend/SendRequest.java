@@ -9,24 +9,26 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.gotas20.R;
-import com.example.gotas20.TasSendPage;
+import com.example.gotas20.TasShop.ShopPickAddress;
+import com.example.gotas20.TasShop.ShopRequest;
+import com.example.gotas20.TasShop.ShopWaitingPage;
 
-public class SendPickAddress extends AppCompatActivity {
+public class SendRequest extends AppCompatActivity {
 
-    Button btnConfirm;
     ImageView btnBack;
+    Button btnOrder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_pick_address);
+        setContentView(R.layout.activity_send_request);
 
-        btnConfirm = findViewById(R.id.confirmBtn);
+        btnOrder = findViewById(R.id.orderBtn);
 
-        btnConfirm.setOnClickListener(new View.OnClickListener() {
+        btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SendPickAddress.this, SendRequest.class);
+                Intent intent = new Intent(SendRequest.this, SendWaitingPage.class);
                 startActivity(intent);
             }
         });
@@ -36,9 +38,10 @@ public class SendPickAddress extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SendPickAddress.this, TasSendPage.class);
+                Intent intent = new Intent(SendRequest.this, SendPickAddress.class);
                 startActivity(intent);
             }
         });
     }
+
 }
