@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.gotas20.HelperClasses.SliderAdapterFood3;
 import com.example.gotas20.HelperClasses.SliderAdapterNews;
@@ -21,6 +22,7 @@ import com.example.gotas20.HelperClasses.SliderforNews;
 import com.example.gotas20.TasFood.MurahResto;
 import com.example.gotas20.TasFood.PopulerResto;
 import com.example.gotas20.TasFood.TwentyfourResto;
+import com.example.gotas20.TasShop.ShopPickAddress;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,7 @@ import java.util.List;
 public class TasFoodPage extends AppCompatActivity {
 
     Button cat1, cat2, cat3;
+    ImageView btnBack;
     private ViewPager2 viewPager3, viewPager2;
     private Handler sliderHandler = new Handler();
 
@@ -35,6 +38,16 @@ public class TasFoodPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tas_food_page);
+
+        btnBack = findViewById(R.id.tasFoodBackBtn);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, Dashboard.class);
+                startActivity(intent);
+            }
+        });
 
         cat1 = findViewById(R.id.tsCategory1_Btn);
 
