@@ -19,7 +19,9 @@ import com.example.gotas20.HelperClasses.SliderAdapterNews;
 import com.example.gotas20.HelperClasses.SliderFood2;
 import com.example.gotas20.HelperClasses.SliderFood3;
 import com.example.gotas20.HelperClasses.SliderforNews;
+import com.example.gotas20.TasFood.FavoritePage;
 import com.example.gotas20.TasFood.MurahResto;
+import com.example.gotas20.TasFood.OrderListPage;
 import com.example.gotas20.TasFood.PopulerResto;
 import com.example.gotas20.TasFood.TwentyfourResto;
 import com.example.gotas20.TasShop.ShopPickAddress;
@@ -30,7 +32,7 @@ import java.util.List;
 public class TasFoodPage extends AppCompatActivity {
 
     Button cat1, cat2, cat3;
-    ImageView btnBack;
+    ImageView btnBack, btnFav, btnOrder;
     private ViewPager2 viewPager3, viewPager2;
     private Handler sliderHandler = new Handler();
 
@@ -45,6 +47,26 @@ public class TasFoodPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TasFoodPage.this, Dashboard.class);
+                startActivity(intent);
+            }
+        });
+
+        btnFav = findViewById(R.id.favIcon);
+
+        btnFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, FavoritePage.class);
+                startActivity(intent);
+            }
+        });
+
+        btnOrder = findViewById(R.id.shopIcon);
+
+        btnOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TasFoodPage.this, OrderListPage.class);
                 startActivity(intent);
             }
         });
