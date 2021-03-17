@@ -36,7 +36,7 @@
             android:layout_marginTop="25dp"/>
 
         <ImageView
-            android:id="@+id/favIcon"
+            android:id="@+id/shopIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
@@ -45,11 +45,11 @@
             android:padding="5dp"/>
 
         <ImageView
-            android:id="@+id/shopIcon"
+            android:id="@+id/favIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
-            android:layout_toLeftOf="@id/favIcon"
+            android:layout_toLeftOf="@id/shopIcon"
             android:src="@drawable/ic_baseline_favorite_24"
             android:padding="5dp"/>
 
